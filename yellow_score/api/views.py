@@ -1,21 +1,10 @@
 from django.shortcuts import render
-from rest_framework import generics, status
-from .serializers import PageSerializer, CreatePageSerializer
+from django.http import HttpResponse
+from rest_framework import generics
 from .models import Page
-from rest_framework.views import APIView
-from rest_framework.response import Response
-
-
+from .serializers import PageSerializers
 # Create your views here.
 
-class PageView(generics.ListAPIView):
+class PageView(generics.CreateAPIView):
     queryset = Page.objects.all()
-    serializer_class = PageSerializer
-    
-class CreatePageView(APIView):
-    def post(self, request, format=None):
-        serializer = CreatePageSerializer(data=request.data)
-        if serializer.is_valid():
-            serializer.save()
-            return Response(serializer.data, status=status.HTTP_201_CREATED)
-        return Response(serializer.errors, status=status.HTTP_400_BAD_REQUEST)
+    serializer_class = PageSerializers
