@@ -3,6 +3,7 @@ import { createRoot } from "react-dom/client";
 import Navbar from "./Navbar";
 
 import "../index.css";
+import Home from "./Home";
 
 export default class App extends Component {
   constructor(props) {
@@ -11,10 +12,9 @@ export default class App extends Component {
 
   render() {
     return (
-      <div>
+      <div className="App">
         <Navbar />
-        <h1>testing!!!</h1>
-        <h2>hi</h2>
+        <Home />
       </div>
     );
   }
