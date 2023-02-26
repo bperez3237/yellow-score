@@ -14,5 +14,33 @@ body {
 }
   
 code {
-    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',monospace;
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New', monospace;
 }
+
+
+:root {
+    --main-background-color: #160f38;
+    --main-background-color-muted: #291f58;
+    --secondary--background-color: #ffea00;
+    --secondary--background-color-muted: #f6f3e3;
+
+    --accent-text-color: #ffea00;
+    --main-text-color: #fffdf2;
+    --main-text-color-muted: #8f8ba9;
+    --secondary-text-color: #160f38;
+    --secondary-text-color-muted: #291f58;
+
+    --border-color: #291f58;
+}
+
+.Navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    background-color: var(--main-background-color);
+    color: var(--accent-text-color);
+    height: 3rem;
+    font-size: 1.5rem;
+}
+
