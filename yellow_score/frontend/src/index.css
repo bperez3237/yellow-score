@@ -57,9 +57,10 @@ code {
     font-size: 1.5rem;
 }
 
-.page {
+.Page {
     min-height: calc(100vh - var(--nav-height));
-    
+    padding: 5px;
+    overflow: scroll;
 }
 
 
