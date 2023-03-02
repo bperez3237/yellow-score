@@ -7,13 +7,14 @@ import HomePage from '../../pages/HomePage.js';
 import { logoutUser } from '../../api/auth.js';
 
 import {
-  BrowserRouter as Router,
   Switch,
   Route,
   useHistory,
   useParams
 } from "react-router-dom";
 import Navbar from '../Navbar/Navbar.js';
+import CreatePage from '../../pages/CreatePage.js';
+import AccountPage from '../../pages/AccountPage.js';
 
 
 function App() {
@@ -27,13 +28,13 @@ function App() {
     setUser(null);
   }
 
-  const history = useHistory();
+//   const history = useHistory();
  
-  useEffect(() => {
-  if (!isUserLoggedIn()) {
-    history.push('/login');
-  }
-}, [user, history]);
+//   useEffect(() => {
+//   if (!isUserLoggedIn()) {
+//     history.push('/login');
+//   }
+// }, [user, history]);
   
   /* referring to <UserContext.Provider value={{user, setUser, isUserLoggedIn}}> and other instances.
   * since the values are stored as variables in context, it's not necessary to escape the values for XSS-sake.
@@ -42,17 +43,20 @@ function App() {
     <div className="App">
       <UserContext.Provider value={{user, setUser, isUserLoggedIn}}>
         <Navbar />
-        {/* <Router> */}
-          <Switch>
-              <Route exact path="/login">
-                <LoginPage/>
-              </Route>
-              <Route exact path="/">
-                <HomePage/>
-              </Route>
-            </Switch>
-        {/* </Router> */}
-
+        <Switch>
+          <Route exact path="/login">
+            <LoginPage/>
+          </Route>
+          <Route exact path="/">
+            <HomePage/>
+          </Route>
+          <Route exact path='/create-page'>
+            <CreatePage />
+          </Route>
+          <Route exact path='/account-page/:id'>
+            <AccountPage />
+          </Route>
+        </Switch>
       </UserContext.Provider>
     </div>
   );
