@@ -27,15 +27,13 @@ function App() {
     setUser(null);
   }
 
-  // const history = useHistory();
-  // console.log(history)
-
-  // useParams
-//   useEffect(() => {
-//   if (!isUserLoggedIn()) {
-//     history.push('/login');
-//   }
-// }, [user, history]);
+  const history = useHistory();
+ 
+  useEffect(() => {
+  if (!isUserLoggedIn()) {
+    history.push('/login');
+  }
+}, [user, history]);
   
   /* referring to <UserContext.Provider value={{user, setUser, isUserLoggedIn}}> and other instances.
   * since the values are stored as variables in context, it's not necessary to escape the values for XSS-sake.
@@ -44,7 +42,7 @@ function App() {
     <div className="App">
       <UserContext.Provider value={{user, setUser, isUserLoggedIn}}>
         <Navbar />
-        <Router>
+        {/* <Router> */}
           <Switch>
               <Route exact path="/login">
                 <LoginPage/>
@@ -53,7 +51,7 @@ function App() {
                 <HomePage/>
               </Route>
             </Switch>
-        </Router>
+        {/* </Router> */}
 
       </UserContext.Provider>
     </div>
