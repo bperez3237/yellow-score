@@ -19,6 +19,7 @@ import AccountPage from '../../pages/AccountPage.js';
 
 function App() {
   const [user, setUser] = useState(null);
+  
   const isUserLoggedIn = () => {
     return !!user;
   }
@@ -28,6 +29,22 @@ function App() {
     setUser(null);
   }
 
+
+  const [accounts, setAccounts] = useState([]);
+
+  useEffect(() => {
+    const fetchAccounts = async () => {
+      const data = await fetch('http://127.0.0.1:8000/accounts');
+      const accounts = await data.json();
+      setAccounts(accounts);
+    }
+  
+    fetchAccounts()
+      .catch(console.error)
+  }, []);
+
+
+  console.log(accounts)
 //   const history = useHistory();
  
 //   useEffect(() => {
