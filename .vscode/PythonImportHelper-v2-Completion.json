@@ -16,11 +16,44 @@
         "documentation": {}
     },
     {
-        "label": "User",
-        "importPath": "django.contrib.auth.models",
-        "description": "django.contrib.auth.models",
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
         "isExtraImport": true,
-        "detail": "django.contrib.auth.models",
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "migrations",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "models",
+        "importPath": "django.db",
+        "description": "django.db",
+        "isExtraImport": true,
+        "detail": "django.db",
+        "documentation": {}
+    },
+    {
+        "label": "django.db.models.deletion",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "django.db.models.deletion",
+        "description": "django.db.models.deletion",
+        "detail": "django.db.models.deletion",
+        "documentation": {}
+    },
+    {
+        "label": "admin",
+        "importPath": "django.contrib",
+        "description": "django.contrib",
+        "isExtraImport": true,
+        "detail": "django.contrib",
         "documentation": {}
     },
     {
@@ -48,6 +81,70 @@
         "documentation": {}
     },
     {
+        "label": "AppConfig",
+        "importPath": "django.apps",
+        "description": "django.apps",
+        "isExtraImport": true,
+        "detail": "django.apps",
+        "documentation": {}
+    },
+    {
+        "label": "GenericForeignKey",
+        "importPath": "django.contrib.contenttypes.fields",
+        "description": "django.contrib.contenttypes.fields",
+        "isExtraImport": true,
+        "detail": "django.contrib.contenttypes.fields",
+        "documentation": {}
+    },
+    {
+        "label": "GenericRelation",
+        "importPath": "django.contrib.contenttypes.fields",
+        "description": "django.contrib.contenttypes.fields",
+        "isExtraImport": true,
+        "detail": "django.contrib.contenttypes.fields",
+        "documentation": {}
+    },
+    {
+        "label": "ContentType",
+        "importPath": "django.contrib.contenttypes.models",
+        "description": "django.contrib.contenttypes.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.contenttypes.models",
+        "documentation": {}
+    },
+    {
+        "label": "serializers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "status",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "routers",
+        "importPath": "rest_framework",
+        "description": "rest_framework",
+        "isExtraImport": true,
+        "detail": "rest_framework",
+        "documentation": {}
+    },
+    {
+        "label": "TestCase",
+        "importPath": "django.test",
+        "description": "django.test",
+        "isExtraImport": true,
+        "detail": "django.test",
+        "documentation": {}
+    },
+    {
         "label": "TestCase",
         "importPath": "django.test",
         "description": "django.test",
@@ -64,6 +161,14 @@
         "documentation": {}
     },
     {
+        "label": "path",
+        "importPath": "django.urls",
+        "description": "django.urls",
+        "isExtraImport": true,
+        "detail": "django.urls",
+        "documentation": {}
+    },
+    {
         "label": "include",
         "importPath": "django.urls",
         "description": "django.urls",
@@ -88,6 +193,63 @@
         "documentation": {}
     },
     {
+        "label": "render",
+        "importPath": "django.shortcuts",
+        "description": "django.shortcuts",
+        "isExtraImport": true,
+        "detail": "django.shortcuts",
+        "documentation": {}
+    },
+    {
+        "label": "JSONRenderer",
+        "importPath": "rest_framework.renderers",
+        "description": "rest_framework.renderers",
+        "isExtraImport": true,
+        "detail": "rest_framework.renderers",
+        "documentation": {}
+    },
+    {
+        "label": "HttpResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "JsonResponse",
+        "importPath": "django.http",
+        "description": "django.http",
+        "isExtraImport": true,
+        "detail": "django.http",
+        "documentation": {}
+    },
+    {
+        "label": "rest_framework.status",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "rest_framework.status",
+        "description": "rest_framework.status",
+        "detail": "rest_framework.status",
+        "documentation": {}
+    },
+    {
+        "label": "HTTP_200_OK",
+        "importPath": "rest_framework.status",
+        "description": "rest_framework.status",
+        "isExtraImport": true,
+        "detail": "rest_framework.status",
+        "documentation": {}
+    },
+    {
+        "label": "User",
+        "importPath": "django.contrib.auth.models",
+        "description": "django.contrib.auth.models",
+        "isExtraImport": true,
+        "detail": "django.contrib.auth.models",
+        "documentation": {}
+    },
+    {
         "label": "TokenObtainPairView",
         "importPath": "rest_framework_simplejwt.views",
         "description": "rest_framework_simplejwt.views",
@@ -101,14 +263,6 @@
         "description": "rest_framework_simplejwt.views",
         "isExtraImport": true,
         "detail": "rest_framework_simplejwt.views",
-        "documentation": {}
-    },
-    {
-        "label": "routers",
-        "importPath": "rest_framework",
-        "description": "rest_framework",
-        "isExtraImport": true,
-        "detail": "rest_framework",
         "documentation": {}
     },
     {
@@ -133,14 +287,6 @@
         "description": "rest_framework.response",
         "isExtraImport": true,
         "detail": "rest_framework.response",
-        "documentation": {}
-    },
-    {
-        "label": "HTTP_200_OK",
-        "importPath": "rest_framework.status",
-        "description": "rest_framework.status",
-        "isExtraImport": true,
-        "detail": "rest_framework.status",
         "documentation": {}
     },
     {
@@ -217,6 +363,87 @@
         "description": "django.core",
         "isExtraImport": true,
         "detail": "django.core",
+        "documentation": {}
+    },
+    {
+        "label": "Migration",
+        "kind": 6,
+        "importPath": "server.api.migrations.0001_initial",
+        "description": "server.api.migrations.0001_initial",
+        "peekOfCode": "class Migration(migrations.Migration):\n    initial = True\n    dependencies = [\n    ]\n    operations = [\n        migrations.CreateModel(\n            name='Account',\n            fields=[\n                ('id', models.AutoField(primary_key=True, serialize=False)),\n                ('profile_picture', models.CharField(max_length=100)),",
+        "detail": "server.api.migrations.0001_initial",
+        "documentation": {}
+    },
+    {
+        "label": "ApiConfig",
+        "kind": 6,
+        "importPath": "server.api.apps",
+        "description": "server.api.apps",
+        "peekOfCode": "class ApiConfig(AppConfig):\n    default_auto_field = 'django.db.models.BigAutoField'\n    name = 'api'",
+        "detail": "server.api.apps",
+        "documentation": {}
+    },
+    {
+        "label": "Account",
+        "kind": 6,
+        "importPath": "server.api.models",
+        "description": "server.api.models",
+        "peekOfCode": "class Account(models.Model):\n    id = models.AutoField(primary_key=True)\n    profile_picture = models.CharField(max_length=100)\nclass Social(models.Model):\n    site = models.CharField(max_length=50)\n    username = models.CharField(max_length=50)\n    account = models.ForeignKey(Account, on_delete=models.CASCADE)\n# class Name(models.Model):\n#     value = models.CharField(max_length=50)\n#     account = models.ForeignKey(Account, on_delete=models.CASCADE)",
+        "detail": "server.api.models",
+        "documentation": {}
+    },
+    {
+        "label": "Social",
+        "kind": 6,
+        "importPath": "server.api.models",
+        "description": "server.api.models",
+        "peekOfCode": "class Social(models.Model):\n    site = models.CharField(max_length=50)\n    username = models.CharField(max_length=50)\n    account = models.ForeignKey(Account, on_delete=models.CASCADE)\n# class Name(models.Model):\n#     value = models.CharField(max_length=50)\n#     account = models.ForeignKey(Account, on_delete=models.CASCADE)\n# class Born(models.Model):\n#     value = models.DateField()\n#     account = models.ForeignKey(Account, on_delete=models.CASCADE)",
+        "detail": "server.api.models",
+        "documentation": {}
+    },
+    {
+        "label": "AccountSerializer",
+        "kind": 6,
+        "importPath": "server.api.serializers",
+        "description": "server.api.serializers",
+        "peekOfCode": "class AccountSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Account\n        fields = '__all__'\nclass SocialSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Social\n        fields = '__all__'",
+        "detail": "server.api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "SocialSerializer",
+        "kind": 6,
+        "importPath": "server.api.serializers",
+        "description": "server.api.serializers",
+        "peekOfCode": "class SocialSerializer(serializers.ModelSerializer):\n    class Meta:\n        model = Social\n        fields = '__all__'",
+        "detail": "server.api.serializers",
+        "documentation": {}
+    },
+    {
+        "label": "urlpatterns",
+        "kind": 5,
+        "importPath": "server.api.urls",
+        "description": "server.api.urls",
+        "peekOfCode": "urlpatterns = [\n    path('accounts/', IndexAccount)\n]",
+        "detail": "server.api.urls",
+        "documentation": {}
+    },
+    {
+        "label": "ShowAccount",
+        "kind": 2,
+        "importPath": "server.api.views",
+        "description": "server.api.views",
+        "peekOfCode": "def ShowAccount(request):\n    # qu\n    serializer_class = AccountSerializer\ndef IndexAccount(request):\n    accounts = Account.objects.values()\n    print(list(accounts))\n    return JsonResponse(list(accounts), status=status.HTTP_200_OK, safe=False)",
+        "detail": "server.api.views",
+        "documentation": {}
+    },
+    {
+        "label": "IndexAccount",
+        "kind": 2,
+        "importPath": "server.api.views",
+        "description": "server.api.views",
+        "peekOfCode": "def IndexAccount(request):\n    accounts = Account.objects.values()\n    print(list(accounts))\n    return JsonResponse(list(accounts), status=status.HTTP_200_OK, safe=False)",
+        "detail": "server.api.views",
         "documentation": {}
     },
     {
@@ -323,7 +550,7 @@
         "kind": 5,
         "importPath": "server.server.settings",
         "description": "server.server.settings",
-        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework_simplejwt.token_blacklist',\n    'public'",
+        "peekOfCode": "INSTALLED_APPS = [\n    'django.contrib.admin',\n    'django.contrib.auth',\n    'django.contrib.contenttypes',\n    'django.contrib.sessions',\n    'django.contrib.messages',\n    'django.contrib.staticfiles',\n    'rest_framework',\n    'rest_framework_simplejwt.token_blacklist',\n    'public',",
         "detail": "server.server.settings",
         "documentation": {}
     },
@@ -485,7 +712,7 @@
         "kind": 5,
         "importPath": "server.server.urls",
         "description": "server.server.urls",
-        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('', include('public.urls'))\n]",
+        "peekOfCode": "urlpatterns = [\n    path('admin/', admin.site.urls),\n    path('public/', include('public.urls')),\n    path('', include('api.urls'))\n]",
         "detail": "server.server.urls",
         "documentation": {}
     },
